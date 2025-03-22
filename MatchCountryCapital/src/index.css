@@ -13,6 +13,13 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
 a {
   font-weight: 500;
   color: #646cff;
@@ -37,32 +44,44 @@ h1 {
 
 button {
   border-radius: 8px;
-  border: 1px solid transparent;
+  border: 1px solid rgba(137, 43, 226, 0.542);
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: #fcc2fcf3;
   cursor: pointer;
   transition: border-color 0.25s;
+  color: rgb(40, 49, 57);
 }
 button:hover {
   border-color: #646cff;
+  background-color: #646cff5d;
 }
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.buttonsWrapper {
+  display: flex;
+  gap: 2rem;
+}
+
+.contentWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.buttonItem {
+  width: 45%;
+}
+
+.bgBlue {
+  background-color: #535bf2;
+}
+
+.bgRed {
+  background-color: red;
 }
